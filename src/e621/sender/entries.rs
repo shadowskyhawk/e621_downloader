@@ -347,7 +347,7 @@ pub(crate) struct PoolEntry {
 #[derive(Default, Debug, Clone, PartialEq, Eq, Serialize, Deserialize)]
 pub(crate) struct UserEntry {
     /// The amount of wiki changes made by the user.
-    pub(crate) wiki_page_version_count: i64,
+    pub(crate) wiki_page_version_count: Option<i64>,
     /// The amount of artist changes made by the user.
     pub(crate) artist_version_count: i64,
     /// The amount of pool changes made by the user.
